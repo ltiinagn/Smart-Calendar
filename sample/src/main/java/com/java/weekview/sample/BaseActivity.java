@@ -12,11 +12,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,9 +23,7 @@ import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.FirebaseError;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -74,7 +70,7 @@ OnDayClickListener, View.OnClickListener, WeekView.EmptyViewClickListener, Exten
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_new);
+        setContentView(R.layout.activity_base);
         String currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser().getUid().toString() ;
         mDataBase = FirebaseDatabase.getInstance().getReference();
         mFireBaseUser=mDataBase.child(currentFirebaseUser);
@@ -82,7 +78,6 @@ OnDayClickListener, View.OnClickListener, WeekView.EmptyViewClickListener, Exten
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 UserType = (String) dataSnapshot.child("auth").getValue();
-                Log.i("usertype",UserType);
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
@@ -113,9 +108,6 @@ OnDayClickListener, View.OnClickListener, WeekView.EmptyViewClickListener, Exten
             monthMasterEvents=gson2.fromJson(json2, type2);
         }
 
-        Log.i("masterEvents",masterEvents.toString());
-        Log.i("monthMasterEvents",monthMasterEvents.toString());
-
         mDataBase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -124,7 +116,6 @@ OnDayClickListener, View.OnClickListener, WeekView.EmptyViewClickListener, Exten
                     WeekViewEvent week=new Gson().fromJson(s.getValue(String.class), type);
                     String time =s.getKey();
                     if (!masterEvents.containsKey(time)) {
-                        Log.i("time",time);
                         masterEvents.put(s.getKey(), week);
                         String month = week.getStartTime().get(Calendar.MONTH) + "-" + week.getStartTime().get(Calendar.YEAR);
                         List<WeekViewEvent> a = monthMasterEvents.get(month);

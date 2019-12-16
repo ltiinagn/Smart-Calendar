@@ -7,13 +7,6 @@
     android:orientation="vertical"
     android:background="@drawable/background2">
 
-<!--    <Button-->
-<!--        android:id="@+id/buttonBasic"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="@string/title_activity_basic"-->
-<!--        style="@style/Button"/>-->
-
     <ProgressBar
         android:id="@+id/progressbar"
         style="?android:attr/progressBarStyleHorizontal"
@@ -40,7 +33,7 @@
         android:layout_gravity="center"
         android:hint="Email Address"
         android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
+        android:textColorHint="#999999"
         />
     <EditText
         android:id="@+id/editTextPassword"
@@ -50,7 +43,7 @@
         android:hint="Enter Password"
         android:inputType="textPassword"
         android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"/>
+        android:textColorHint="#999999"/>
 
     <Space
         android:layout_width="match_parent"
@@ -60,6 +53,7 @@
         android:layout_width="156dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textColor="@android:color/black"
         android:text="Login"/>
 
     <Button
@@ -67,6 +61,7 @@
         android:layout_width="156dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textColor="@android:color/black"
         android:text="Sign Up Now!" />
 
 <!--    This is for developer use. Before finishing the project, pls delete this textView-->
@@ -77,6 +72,6 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:textColor="@color/white"
-        android:text="developer? click here"/>
+        android:text=""/>
 
 </LinearLayout>
