@@ -1,0 +1,82 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#333333">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:titleTextColor="@color/white" />
+
+                <com.java.weekview.ExtendedCalendarView
+                    android:id="@+id/calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="#000000"
+                    android:visibility="visible" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#333333"/>
+
+
+
+
+
+        <com.java.weekview.WeekView
+            android:id="@+id/weekView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:columnGap="8dp"
+            app:dayBackgroundColor="#000000"
+            app:eventTextColor="@android:color/black"
+            app:headerColumnBackground="#ff0000"
+            app:headerColumnPadding="8dp"
+            app:headerColumnTextColor="#ffffff"
+            app:headerRowBackgroundColor="@color/black"
+            app:headerRowPadding="12dp"
+            app:hourHeight="60dp"
+            app:noOfVisibleDays="3"
+            app:textSize="12sp"
+            app:todayBackgroundColor="#999999"
+            app:todayHeaderTextColor="@color/white" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/new_activity"
+        android:layout_margin="16dp" />
+</android.support.design.widget.CoordinatorLayout>

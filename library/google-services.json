@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "605613904838",
+    "firebase_url": "https://java1d-real.firebaseio.com",
+    "project_id": "java1d-real",
+    "storage_bucket": "java1d-real.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605613904838:android:c7c78b3969857c98c9d8c7",
+        "android_client_info": {
+          "package_name": "com.java.weekview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605613904838-a2892lmbq4iqdqchemhhpb48vds1rbp5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.java.weekview.sample",
+            "certificate_hash": "874d6df58673fd09bb18a77c3026b5a13cbfe6ad"
+          }
+        },
+        {
+          "client_id": "605613904838-dbsopsepneer509i15pmcsrm4mpgljnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNn9846KFJekB2B9SSLLBtYN_hprpmVwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605613904838-dbsopsepneer509i15pmcsrm4mpgljnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

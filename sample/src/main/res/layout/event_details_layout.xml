@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D4D4D4">
+
+        <com.java.weekview.TextAwesome
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_calendar_o"
+            android:layout_gravity="center_vertical"
+            android:textSize="23sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="7dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:background="@null"
+                android:textColor="#000000"
+                android:hint="Activity"
+                android:textColorHint="#444444"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/date_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.java.weekview.TextAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fa_clock_o"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/start_date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+                        <EditText
+                            android:id="@+id/start_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:clickable="true"
+                            android:text="Wed, Apr 20, 2016"
+                            android:textColorHint="#999999"/>
+
+                        <EditText
+                            android:id="@+id/start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:text="11:00 AM"
+                            android:textColorHint="#999999"/>/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/end_date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_vertical">
+                        <EditText
+                            android:id="@+id/end_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:clickable="true"
+                            android:text="Wed, Apr 20, 2016"
+                            android:textColorHint="#999999"/>/>
+
+                        <EditText
+                            android:id="@+id/end_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:text="11:00 AM"
+                            android:textColorHint="#999999"/>/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <LinearLayout
+                android:id="@+id/location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
+
+                <com.java.weekview.TextAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fa_map_marker"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="23sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="15dp">
+
+                    <EditText
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Location"
+                        android:textColorHint="#999999" />/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
+
+                <com.java.weekview.TextAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fa_calendar_o"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="23sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="15dp">
+
+                    <EditText
+                        android:id="@+id/activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:background="@null"
+                        android:hint="Topic"
+                        android:textColorHint="#999999" />
+                    android:paddingLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
+
+                <com.java.weekview.TextAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fa_users"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="23sp"
+                    android:textColor="#ffffff"/>
+                    android:layout_marginLeft="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="15dp">
+
+                    <EditText
+                        android:id="@+id/collaborators"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:hint="Collaborators"
+                        android:textColorHint="#999999"/>
+                    android:paddingLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
+
+                <ImageView
+                    android:id="@+id/color_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="#ff0000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="15dp">
+                    <Spinner
+                        android:id="@+id/color_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Red"
+                        android:entries="@array/event_arrays"
+                        android:prompt="@string/event_prompt" />
+                    android:layout_marginLeft="3dp"
+                    android:paddingLeft="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="#00ff00"
+                android:textColor="#000000"
+                android:text="Save"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

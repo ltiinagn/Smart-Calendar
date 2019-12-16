@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "487402842849",
+    "firebase_url": "https://calendarmonthweekview-9aa82.firebaseio.com",
+    "project_id": "calendarmonthweekview-9aa82",
+    "storage_bucket": "calendarmonthweekview-9aa82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487402842849:android:2af77d8c58d5c7b93fa5a0",
+        "android_client_info": {
+          "package_name": "com.java.weekview.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487402842849-kkii3d7j62trtphkf9qjpn5h26ustvdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.java.weekview.sample",
+            "certificate_hash": "6da32531f333d2a31964b81ea1c3bde8a347a3be"
+          }
+        },
+        {
+          "client_id": "487402842849-p80v93guvo39vpbf8tbe3he9li450n2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.java.weekview.sample",
+            "certificate_hash": "874d6df58673fd09bb18a77c3026b5a13cbfe6ad"
+          }
+        },
+        {
+          "client_id": "487402842849-0t3g0gt8m2i0btqp2fhqi5409bi62kn5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUQkhza_jo0WVfzWQgPofHtdDmAZEZPFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487402842849-0t3g0gt8m2i0btqp2fhqi5409bi62kn5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
